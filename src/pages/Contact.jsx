@@ -1,6 +1,10 @@
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 function Contact() {
   return (
-    <section id="contacto" className="py-20 bg-gray-50">
+    <>
+      <Header />
+      <section id="contacto" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
@@ -121,8 +125,10 @@ function Contact() {
 
         </div>
       </div>
-    </section>
-  );
+      </section>
+      <Footer />
+    </>
+  )
 }
 
 export default Contact;
